@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/portfolio-react-tailwind/static/css/main.8e85b316.css",
+    "main.js": "/portfolio-react-tailwind/static/js/main.aef27629.js",
+    "static/media/resume.pdf": "/portfolio-react-tailwind/static/media/resume.d05f6d9f08ff3e26824e.pdf",
+    "index.html": "/portfolio-react-tailwind/index.html",
+    "main.8e85b316.css.map": "/portfolio-react-tailwind/static/css/main.8e85b316.css.map",
+    "main.aef27629.js.map": "/portfolio-react-tailwind/static/js/main.aef27629.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8e85b316.css",
+    "static/js/main.aef27629.js"
+  ]
+}
