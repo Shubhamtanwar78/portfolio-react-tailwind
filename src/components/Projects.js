@@ -1,11 +1,11 @@
-import React from "react";
+import React,{ useEffect } from "react";
 import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
     title: "Simon Game",
     description:
-      "he Simon game is the exciting game of lights and sounds in which players must repeat random sequences of lights by pressing the colored pads in the correct order.",
+      "The Simon game is the exciting game of lights and sounds in which players must repeat random sequences of lights by pressing the colored pads in the correct order.",
     image: './Images/simon-game.png',
     link: "https://shubhamtanwar78.github.io/simon-game/",
     tags: ["HTML", "CSS", "JavaScript"],
@@ -42,6 +42,9 @@ const projects = [
 ];
 
 const Project = () => {
+  useEffect(() => {
+  window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">

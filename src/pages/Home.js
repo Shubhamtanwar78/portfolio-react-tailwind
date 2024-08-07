@@ -1,10 +1,13 @@
 // src/pages/Home.js
-import React from "react";
+import React,{ useEffect } from "react";
 import { FaDownload } from "react-icons/fa";
 import resumefile from "../resume/resume.pdf";
 import { TypeAnimation } from 'react-type-animation';
 
 const Home = () => {
+  useEffect(() => {
+  window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <div className="flex flex-col md:flex-row justify-between">
@@ -58,6 +61,7 @@ const Home = () => {
               "React & Next JS",
               "Styled components",
               "Tailwind CSS",
+              "Figma" , "Blender", "Sketch"
             ].map((tag) => (
               <span
                 key={tag}
@@ -95,117 +99,3 @@ const Home = () => {
 };
 
 export default Home;
-
-
-//                 <div className="flex items-center space-x-4 mb-6">
-//                     <img  alt="Profile" className="w-20 h-20 rounded-full invert" />
-//                     <div>
-//                       <h1 className="text-3xl font-bold">Shubham Tanwar</h1>
-//                       <p className="text-xl">Frontend Developer</p>
-//                     </div>
-//                 </div>
-                
-//             </div>
-
-//             <div className="mb-6 flex">
-//               <div>
-//                 <h2 className="text-2xl font-semibold mb-2">About me</h2>
-//                 <p className="mb-4">
-//                   Hello! I'm Shubham Tanwar, a passionate and detail-oriented
-//                   Frontend Developer with 4 years of experience in crafting
-//                   beautiful and responsive web interfaces. I thrive on creating
-//                   intuitive and engaging user experiences. I love to work where I
-//                   can learn new things and enhance my skills. I deeply believe in
-//                   that nothing is Impossible. I am a quick learner, optimistic,
-//                   adaptive, Innovative and creative.
-//                 </p>
-//                 <p>
-//                   I specialize in building and maintaining interactive and dynamic
-//                   websites using modern web technologies such as HTML, CSS,
-//                   JavaScript, and frameworks like React and Vue.js. Over the years,
-//                   I've collaborated with cross-functional teams to deliver
-//                   high-quality web applications that meet client requirements and
-//                   exceed user expectations.
-//                 </p>
-//                 <a href="/about" className="text-green-400 hover:underline">Read more...</a>
-//               </div>
-//               <div>
-//                 <h2 className="text-2xl font-semibold mb-2">I can write</h2>
-//                 <div className="flex flex-wrap">
-//                   {[
-//                     "HTML, CSS & CSS modules",
-//                     "Javascript",
-//                     "React & Next JS",
-//                     "Styled components",
-//                     "Chakra UI",
-//                   ].map((tag) => (
-//                     <span
-//                       key={tag}
-//                       className="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-1 px-3 rounded-full m-1"
-//                     >
-//                       {tag}
-//                     </span>
-//                   ))}
-//                 </div>
-//               </div>
-//             </div>
-
-//             <div className="mb-6">
-//               <h2 className="text-2xl font-semibold mb-2">Work Experience</h2>
-//               <div className="space-y-4">
-//                 <div className="flex items-center space-x-4">
-//                   <img
-//                     src="/path/to/logo1.png"
-//                     alt="Company 1"
-//                     className="w-10 h-10 rounded-full"
-//                   />
-//                   <div>
-//                     <h3 className="text-xl font-semibold">
-//                       Frontend Developer - Intern
-//                     </h3>
-//                     <p>Genesys Tech Hub</p>
-//                     <p>May 2021 - Present</p>
-//                   </div>
-//                 </div>
-//                 <div className="flex items-center space-x-4">
-//                   <img
-//                     src="/path/to/logo2.png"
-//                     alt="Company 2"
-//                     className="w-10 h-10 rounded-full"
-//                   />
-//                   <div>
-//                     <h3 className="text-xl font-semibold">
-//                       Frontend Developer - Intern
-//                     </h3>
-//                     <p>Genesys Tech Hub</p>
-//                     <p>May 2021 - Present</p>
-//                   </div>
-//                 </div>
-//               </div>
-//             </div>
-
-//             <div className="mb-6">
-//               <h2 className="text-2xl font-semibold mb-2">Most recent project</h2>
-//               <div className="bg-gray-800 p-4 rounded-lg">
-//                 <h3 className="text-xl font-semibold">Defi Pronto</h3>
-//                 <p>
-//                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit
-//                   lacus, lacus, commodo libero.
-//                 </p>
-//                 <div className="flex flex-wrap mt-2">
-//                   <span className="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-1 px-3 rounded-full m-1">
-//                     Styled components
-//                   </span>
-//                 </div>
-//               </div>
-//             </div>
-
-//             <footer className="text-center text-gray-500 mt-8">
-//               ©2024, All Right Reserved
-//             </footer>
-//         </div>
-//     </div>
-//   );
-// };
-
-// export default Home;

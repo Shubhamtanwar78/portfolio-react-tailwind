@@ -2,13 +2,13 @@ import React from 'react';
 
 const ProjectCard = ({ project }) => {
   return (
-    <a className="max-w-sm rounded overflow-hidden shadow-lg" href={project.link}>
+    <a className="max-w-sm rounded overflow-hidden shadow-lg cardShow h-96 relative" href={project.link}>
       <img className="w-full" src={project.image} alt={project.title} />
-      <div className="px-6 py-4">
+      <div className="px-6 py-4 cardDetails absolute">
         <div className="font-bold text-xl mb-2">{project.title}</div>
-        <p className="text-gray-700 text-base">{project.description}</p>
-      </div>
-          <div className="px-6 py-4">
+        <p className="text-base">{project.description}</p>
+
+        <div className="py-4 ">
               {project.tags.map((tag, index) => (
           <span
             key={index}
@@ -18,6 +18,8 @@ const ProjectCard = ({ project }) => {
           </span>
         ))}
       </div>
+      </div>
+      
     </a>
   );
 };
