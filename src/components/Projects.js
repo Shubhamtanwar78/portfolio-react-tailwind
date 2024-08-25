@@ -1,7 +1,23 @@
-import React,{ useEffect } from "react";
+import React from "react";
 import ProjectCard from "./ProjectCard";
 
 const projects = [
+  {
+    title: "Donation WebPage Design in Figma",
+    description:
+      "Introducing the ultimate Figma template for Nike sneaker enthusiasts - a sleek and user-friendly mobile e-commerce app design that will take your online shopping experience to the next level!",
+    image: './Images/nikedef.png',
+    link: "https://www.figma.com/proto/ytZ4J9Z6Jbc1QZmzAHK3Ll/Untitled?page-id=0%3A1&node-id=133-23&viewport=-74675%2C37582%2C0.74&t=AusR8izfzkBrCJsY-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=133%3A23&show-proto-sidebar=1",
+    tags: ["Figma"],
+  },
+  {
+    title: "Donation WebPage Design in Figma",
+    description:
+      "It is designed in Figma, focusing on components and responsiveness.",
+    image: './Images/DonationFigma.png',
+    link: "https://www.figma.com/proto/ytZ4J9Z6Jbc1QZmzAHK3Ll/Untitled?page-id=0%3A1&node-id=84-442&viewport=-19886%2C10771%2C0.21&t=jhRY34GysECMyBhq-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=84%3A442&show-proto-sidebar=1",
+    tags: ["Figma"],
+  },
   {
     title: "Simon Game",
     description:
@@ -42,9 +58,6 @@ const projects = [
 ];
 
 const Project = () => {
-  useEffect(() => {
-  window.scrollTo(0, 0);
-  }, []);
   return (
     <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">

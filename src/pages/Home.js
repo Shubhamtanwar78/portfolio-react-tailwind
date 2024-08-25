@@ -1,13 +1,10 @@
 // src/pages/Home.js
-import React,{ useEffect } from "react";
+import React from "react";
 import { FaDownload } from "react-icons/fa";
 import resumefile from "../resume/resume.pdf";
 import { TypeAnimation } from 'react-type-animation';
 
 const Home = () => {
-  useEffect(() => {
-  window.scrollTo(0, 0);
-  }, []);
   return (
     <div>
       <div className="flex flex-col md:flex-row justify-between">
